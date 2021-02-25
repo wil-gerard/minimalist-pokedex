@@ -70,11 +70,10 @@ function getFetch() {
             // document.querySelector('#img-bottom-left').src = pokeImg[3]
             // document.querySelector('#img-bottom-right').src = pokeImg[4]
             document.querySelector('#poke-name').innerText = `${pokeName}`
-            document.querySelector('#poke-id').innerText = `Pokémon #${pokeId}`
+            document.querySelector('#poke-id').innerText = `Pokémon ID #${pokeId}`
             document.querySelector('#poke-weight').innerText = `weight: ${pokeWeight} hectograms`
             document.querySelector('#poke-height').innerText = `height: ${pokeHeight} decimeters`
-            // pokeOutput.style.border = 'solid rgb(197, 189, 178) 5px'
-            // pokeOutput.style.width = '500px'
+            pokeInfo.style = 'padding: 10px;'
         })
         .catch(err => {
             console.log(`error ${err}`)     
