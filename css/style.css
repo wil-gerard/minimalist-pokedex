@@ -85,8 +85,8 @@ body {
 
 #poke-info {
   background-color: white;
+  width: 25rem;
 }
-
 
 h2,
 h3,
@@ -109,8 +109,8 @@ h3 {
 }
 
 #output img{
-  width: 250px;
-  margin: 10px;
+  width: 25rem;
+  margin-bottom: 0.5rem;
 }
 
 /******************************************
@@ -122,13 +122,13 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px;
+  padding: 4rem;
 }
 
 input,
 button {
-  height: 40px;
-  width: 350px;
+  height: 5rem;
+  width: 40rem;
 }
 
 h1,
@@ -167,7 +167,6 @@ button {
 #bottom-left,
 #bottom-right {
   /* filter: blur(2px); */
-  /* background-position: center; */
   background-repeat: no-repeat;
 }
 
@@ -176,7 +175,6 @@ button {
 #img-bottom-left,
 #img-bottom-right {
   display: grid;
-  /* height: 200px; */
   place-self: center;
 }
 
@@ -224,10 +222,6 @@ button {
     font-size: 52.5%;
   }
 
-  #output img{
-    width: 200px;
-  }
-
   body { 
     grid-template-areas:
       "top-left top-left top-right top-right"
@@ -242,11 +236,11 @@ button {
 @media screen and (max-width: 360px) {
 
   html {
-    font-size: 48.5%;
+    font-size: 45.5%;
   }
 
-  #output img{
-    width: 180px;
+  h1 {
+    font-size: 4.5rem;
   }
 
   body { 
@@ -254,7 +248,7 @@ button {
       "top-left top-left top-right top-right"
       "input input input input"
       "bottom-left bottom-left bottom-right bottom-right";
-    grid-template-rows: 3fr 2fr 0.25fr;  
+    grid-template-rows: 3fr 1fr 0.25fr;  
     grid-template-columns: 2fr 1fr 1fr 2fr;
     height: 100vh;
   }

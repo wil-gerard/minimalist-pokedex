@@ -73,7 +73,7 @@ function getFetch() {
             document.querySelector('#poke-id').innerText = `Pokémon ID #${pokeId}`
             document.querySelector('#poke-weight').innerText = `weight: ${pokeWeight} hectograms`
             document.querySelector('#poke-height').innerText = `height: ${pokeHeight} decimeters`
-            pokeInfo.style = 'padding: 10px;'
+            pokeInfo.style = 'padding: 1rem;'
         })
         .catch(err => {
             console.log(`error ${err}`)     
